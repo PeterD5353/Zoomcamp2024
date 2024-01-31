@@ -1,0 +1,3 @@
+[submodule "2-workflow-orchestration/2-workflow-orchestration/mage-zoomcamp"]
+	path = 2-workflow-orchestration/2-workflow-orchestration/mage-zoomcamp
+	url = https://github.com/PeterD5353/Zoomcamp2024
