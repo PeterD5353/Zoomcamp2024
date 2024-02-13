@@ -4,7 +4,7 @@
     )
 }}
 
-with green_taxi_external as (
+with green_taxi_internal as (
     select *, 
         'Green' as service_type
     from {{ ref('stg_green_tripdata') }}
@@ -15,7 +15,7 @@ yellow_cab_data as (
     from {{ ref('stg_yellow_tripdata') }}
 ), 
 trips_unioned as (
-    select * from green_taxi_external
+    select * from green_taxi_internal
     union all 
     select * from yellow_cab_data
 ), 
