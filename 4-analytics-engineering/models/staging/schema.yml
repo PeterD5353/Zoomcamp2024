@@ -3,10 +3,11 @@ version: 2
 sources:
   - name: staging
     database: zoomcamp-2024-412121
-    schema: ny_taxi
+    schema: trips_data_all
     tables:
-      - name: green_taxi_internal
-      - name: yellow_cab_data
+      - name: green_tripdata
+      - name: yellow_tripdata
+      - name: fhv_tripdata
 
 
 models:
@@ -203,3 +204,4 @@ models:
       - name: payment_type_description
         data_type: string
         description: ""
+  - name: stg_fhv_tripdata
